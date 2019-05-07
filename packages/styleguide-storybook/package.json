@@ -1,0 +1,19 @@
+{
+  "name": "@jsdevtools/styleguide-storybook",
+  "version": "0.1.0",
+  "description": "Storybook styleguide",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@jsdevtools/input": "*",
+    "@jsdevtools/input-ts": "*"
+  },
+  "devDependencies": {
+    "@jsdevtools/dev-dependencies": "*"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  }
+}

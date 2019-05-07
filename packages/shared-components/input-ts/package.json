@@ -1,0 +1,28 @@
+{
+  "name": "@jsdevtools/input-ts",
+  "version": "0.1.0",
+  "description": "Sample typescript component",
+  "main": "dist/bundle.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "webpack --watch --config webpack.config.js",
+    "prepare": "yarn run build",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "yarn type-check -- --watch",
+    "build": "yarn build:types && yarn build:js && webpack --config webpack.config.js",
+    "build:types": "tsc",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "styled-components": "^4.2.0"
+  },
+  "dependencies": {
+    "webpack": "^4.30.0"
+  },
+  "devDependencies": {
+    "@jsdevtools/dev-dependencies": "*"
+  }
+}

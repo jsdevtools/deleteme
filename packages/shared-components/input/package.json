@@ -1,0 +1,28 @@
+{
+  "name": "@jsdevtools/input",
+  "version": "0.1.0",
+  "description": "Sample component",
+  "main": "dist/bundle.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "webpack --watch --config webpack.config.js",
+    "prepare": "yarn run build",
+    "build": "webpack --config webpack.config.js",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "styled-components": "^4.2.0"
+  },
+  "dependencies": {
+    "webpack": "^4.30.0"
+  },
+  "devDependencies": {
+    "@jsdevtools/dev-dependencies": "*",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "styled-components": "^4.2.0"
+  }
+}
