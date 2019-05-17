@@ -1,0 +1,27 @@
+{
+  "name": "@jsdevtools/stardust-ui-font-awesome-plugin",
+  "version": "0.1.0",
+  "description": "Plugin adds font-awesome icons to stardust-ui",
+  "main": "dist/bundle.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "webpack --watch --config webpack.dev.js",
+    "prepare": "yarn run build",
+    "build": "webpack --config webpack.prod.js",
+    "test": "jest",
+    "clean": "shx rm -f yarn-error.log && shx rm -rf dist"
+  },
+  "dependencies": {
+    "webpack": "^4.30.0"
+  },
+  "peerDependencies": {
+    "@fortawesome/react-fontawesome": ">=0.1.4",
+    "react": ">=16.8.6"
+  },
+  "devDependencies": {
+    "@fortawesome/react-fontawesome": ">=0.1.4",
+    "react": ">=16.8.6",
+    "@jsdevtools/dev-dependencies": "*"
+  }
+}
