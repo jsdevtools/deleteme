@@ -9,7 +9,8 @@
     "start": "webpack --watch --config webpack.config.js",
     "prepare": "yarn run build",
     "build": "webpack --config webpack.config.js",
-    "test": "jest"
+    "test": "jest",
+    "clean": "shx rm -f yarn-error.log && shx rm -rf dist"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
