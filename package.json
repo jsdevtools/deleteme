@@ -2,6 +2,11 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "clean-all": "lerna clean --yes && lerna run clean &&  shx rm -f yarn-error.log",
+    "build": "lerna run build",
+    "storybook": "lerna run storybook --stream",
+    "bs": "lerna bootstrap",
+    "refresh": "yarn clean-all && yarn build && yarn bs && yarn storybook"
   },
   "devDependencies": {
     "lerna": "^3.13.4",
