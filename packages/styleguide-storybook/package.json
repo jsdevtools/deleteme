@@ -7,7 +7,10 @@
   "private": true,
   "dependencies": {
     "@jsdevtools/input": "*",
-    "@jsdevtools/input-ts": "*"
+    "@jsdevtools/input-ts": "*",
+    "@jsdevtools/stardust-ui-font-awesome-plugin": "*",
+    "@jsdevtools/tuneable-stardust-ui-plugin": "*",
+    "@jsdevtools/tuneable": "*"
   },
   "devDependencies": {
     "@jsdevtools/dev-dependencies": "*"
