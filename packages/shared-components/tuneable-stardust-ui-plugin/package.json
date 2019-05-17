@@ -1,0 +1,30 @@
+{
+  "name": "@jsdevtools/tuneable-stardust-ui-plugin",
+  "version": "0.1.0",
+  "description": "Make stardust-ui components tuneable.",
+  "main": "dist/bundle.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "webpack --watch --config webpack.config.js",
+    "prepare": "yarn run build",
+    "build": "webpack --config webpack.config.js",
+    "test": "jest",
+    "clean": "shx rm -f yarn-error.log && shx rm -rf dist"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "@stardust-ui/react": "^0.29.1"
+  },
+  "dependencies": {
+    "@jsdevtools/tuneable": "*",
+    "prop-types": "^15.7.2",
+    "webpack": "^4.30.0"
+  },
+  "devDependencies": {
+    "@jsdevtools/dev-dependencies": "*",
+    "react": "^16.8.6",
+    "@stardust-ui/react": "^0.29.1",
+    "@jsdevtools/eslint-config": "*"
+  }
+}
