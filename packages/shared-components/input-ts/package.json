@@ -13,7 +13,8 @@
     "build": "yarn build:types && yarn build:js && webpack --config webpack.config.js",
     "build:types": "tsc",
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
-    "test": "jest"
+    "test": "jest",
+    "clean": "shx rm -f yarn-error.log && shx rm -rf dist lib"
   },
   "peerDependencies": {
     "react": "^16.8.6",
