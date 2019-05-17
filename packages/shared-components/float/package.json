@@ -1,0 +1,30 @@
+{
+  "name": "@jsdevtools/float",
+  "version": "0.1.0",
+  "description": "Container component that fits to size of a wrapped component and floats it.",
+  "main": "dist/bundle.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "webpack --watch --config webpack.config.js",
+    "prepare": "yarn run build",
+    "build": "webpack --config webpack.config.js",
+    "test": "jest",
+    "clean": "shx rm -f yarn-error.log && shx rm -rf dist"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "styled-components": "^4.2.0"
+  },
+  "dependencies": {
+    "@jsdevtools/place-holder": "*",
+    "webpack": "^4.30.0"
+  },
+  "devDependencies": {
+    "@jsdevtools/dev-dependencies": "*",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "styled-components": "^4.2.0"
+  }
+}
